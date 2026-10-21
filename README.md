@@ -17,6 +17,14 @@ This repository is a **technical portfolio**, not a turnkey software package. It
 | **Asterisk + WhatsApp** | Integrates Asterisk telephony with WhatsApp messaging via Twilio API | Asterisk, Twilio API, WhatsApp | [Project details](docs/asterisk-whatsapp-twilio.md) |
 | **VMware to Hyper-V Migration** | Migrated a production Asterisk PBX, database and web application with approximately 20 minutes of downtime | VMware, Hyper-V, Linux, Asterisk, MariaDB, Apache | [Project details](docs/vmware-to-hyperv-migration.md) |
 
+## AI-Assisted Engineering Approach
+
+I use ChatGPT as a technical assistant for code generation, troubleshooting, research, and documentation. I define system architecture, verify results using official vendor documentation, and test integrations in real environments.
+
+My primary role is IT systems integration and VoIP engineering, rather than full-time software development.
+
+[Read more about my engineering approach](docs/ai-assisted-engineering.md)
+
 ## Other implemented integrations and engineering experience
 
 - **Asterisk + WhatsApp via Twilio API:** implemented a working integration, subject to the Twilio environment's commercial and approval limitations. This is a historical implementation; current provider behavior has not been revalidated.
