@@ -1,52 +1,51 @@
 # IT Systems Engineering | Applied AI & Integrations
 
-**Sergej Tovstucha** — VoIP Systems Engineer | Linux Infrastructure | System Integration | Business Automation
+**Sergej Tovstucha** — VoIP Systems Engineer | IT Systems Integration | Linux Infrastructure | Business Automation
 
-I design, integrate, troubleshoot, and maintain practical IT solutions. My background includes over 20 years of work in IP telephony, alongside Linux servers, networks, web applications, and integrations with external APIs.
+I design, integrate, troubleshoot, and maintain practical IT solutions. My experience includes more than 20 years in IP telephony, alongside Linux servers, networking, virtualization, web applications, and integrations with external APIs.
 
-This repository is a **technical portfolio**, not a turnkey software package. It documents selected real projects and engineering decisions. Customer code, credentials, and private infrastructure details are not published.
+This repository is a **portfolio of selected real projects and technical investigations**, not a turnkey product. Customer source code, credentials, and confidential infrastructure details are not published. Some examples are adapted for documentation and have not been revalidated against current software versions.
 
-## Featured projects
+## Selected engineering projects
 
-| Project | What it does | Core technologies | Documentation |
+| Project | Business or technical result | Technologies | Details |
 | --- | --- | --- | --- |
-| **Multilingual AI IVR + Telegram** | Handles inbound calls, adapts the IVR language, and forwards requests or call-event notifications to the right person or Telegram group | Asterisk, IVR, Google STT/TTS, LLM, Telegram Bot API | [Project details](docs/multilingual-ai-telegram-ivr.md) |
-| **Clinic Autodialing** | Calls patients before appointments and classifies responses such as confirm, cancel, or callback | Asterisk, Python, STT, OpenAI API, IVR | [Project details](docs/clinic-autodialing.md) |
-| **Multitenant Asterisk PBX** | Database-driven provisioning and tenant-isolated dialplan architecture | Asterisk, MariaDB Realtime/ODBC, PHP, AMI | [Separate repository](https://github.com/sergejtovstucha/asterisk-pbx) |
-| **AI Job Search Agent** | Searches and evaluates vacancies against a professional profile, filters unsuitable positions, and identifies skill gaps | ChatGPT, AI-assisted research, workflow automation | [Project details](docs/ai-job-search-agent.md) |
-| **Asterisk + WhatsApp** | Integrates Asterisk telephony with WhatsApp messaging via Twilio API | Asterisk, Twilio API, WhatsApp | [Project details](docs/asterisk-whatsapp-twilio.md) |
-| **VMware to Hyper-V Migration** | Migrated a production Asterisk PBX, database and web application with approximately 20 minutes of downtime | VMware, Hyper-V, Linux, Asterisk, MariaDB, Apache | [Project details](docs/vmware-to-hyperv-migration.md) |
+| **Multilingual AI IVR + Telegram** | Handles incoming requests and call events; adapts IVR language and routes Telegram messages to an appropriate employee or group | Asterisk, Google STT/TTS, LLM, Telegram Bot API | [Case study](docs/multilingual-ai-telegram-ivr.md) |
+| **Clinic Autodialing** | Automated patient appointment confirmation, cancellation, and callback handling; ambiguous speech responses prompted clarification. After testing, the customer chose a Latvian-only IVR workflow | Asterisk, Python, STT, OpenAI API, IVR | [Case study](docs/clinic-autodialing.md) |
+| **Multitenant Asterisk PBX** | Shared call-processing architecture, tenant-specific contexts, MariaDB Realtime, and web-based provisioning; historical solution documented with illustrative examples | Asterisk, MariaDB/ODBC, PHP, AMI | [Separate repository](https://github.com/sergejtovstucha/asterisk-pbx) |
+| **AI Job Search Agent** | Working ChatGPT-based vacancy discovery and suitability evaluation against defined criteria and exclusions; not a proprietary crawler or AI model | ChatGPT, AI-assisted research, workflow configuration | [Case study](docs/ai-job-search-agent.md) |
+| **Asterisk + WhatsApp via Twilio** | Implemented an Asterisk-to-WhatsApp API integration in a Twilio trial environment; subject to provider restrictions and approvals | Asterisk, Twilio API, WhatsApp | [Case study](docs/asterisk-whatsapp-twilio.md) |
+| **VMware → Hyper-V Migration** | Migrated a production Asterisk system, database, and web application after staged testing; approximately 20 minutes of planned downtime | VMware, Hyper-V, Linux, Asterisk, MariaDB/MySQL, Apache | [Case study](docs/vmware-to-hyperv-migration.md) |
 
 ## Troubleshooting & Technical Investigations
 
-These case studies show how I investigate unfamiliar systems using hands-on testing, official technical documentation, and ChatGPT as an engineering assistant. They document verified observations separately from hypotheses and recommendations.
+These investigations demonstrate how I work with unfamiliar systems: reproduce a problem, establish a baseline, collect logs and traces, consult official technical documentation, use ChatGPT as an engineering assistant, and verify hypotheses with practical tests.
 
-- [Mobile Contact Center — SIP, Android and ARI Troubleshooting](docs/mobile-contact-center-troubleshooting.md) — independent Asterisk dialplan tests, customer ARI integration tests, and investigation of Android SIP, push, audio and presence problems.
-- [Browser-to-Browser WebRTC — Cross-Network Diagnostics](docs/webrtc-b2b-cross-network-diagnostics.md) — LAN vs mobile-network experiments, ICE/STUN/TURN/DTLS-SRTP analysis, browser logs and signaling inspection.
+- **[Mobile Contact Center — SIP, Android & ARI Troubleshooting](docs/mobile-contact-center-troubleshooting.md)** — independent SIP/Dialplan tests on my own Asterisk PBX followed by customer-side ARI integration tests; investigation of Android background behavior, registration, push notifications, audio, and presence. I studied Android development fundamentals to understand and investigate the client application.
+- **[Browser-to-Browser WebRTC — Cross-Network Diagnostics](docs/webrtc-b2b-cross-network-diagnostics.md)** — successful LAN calls compared with failed cross-network calls; analysis of ICE, STUN, TURN, DTLS-SRTP, browser logs, SDP, and WebSocket signaling, supported by official documentation.
+
+**Investigation status:** Diagnostic observations and recommendations are distinguished from verified fixes. These case studies do not claim that every issue was resolved in production.
 
 ## AI-Assisted Engineering Approach
 
-I use ChatGPT as a technical assistant for code generation, troubleshooting, research, and documentation. I define system architecture, verify results using official vendor documentation, and test integrations in real environments.
+I use ChatGPT for code generation, technical research, log analysis, and documentation. I take responsibility for defining system behavior, understanding integration points, checking solutions against official vendor documentation, and testing results in real environments.
 
-My primary role is IT systems integration and VoIP engineering, rather than full-time software development.
+My main specialization is **systems integration and VoIP engineering**, rather than full-time software development.
 
-[Read more about my engineering approach](docs/ai-assisted-engineering.md)
+[Read about my engineering approach](docs/ai-assisted-engineering.md)
 
-## Other implemented integrations and engineering experience
+## Additional engineering experience
 
-- **Asterisk + WhatsApp via Twilio API:** implemented a working integration, subject to the Twilio environment's commercial and approval limitations. This is a historical implementation; current provider behavior has not been revalidated.
-- **Asterisk call processing + Whisper:** used Asterisk `AMD()` to distinguish answering machines from human responses and queued audio recordings for asynchronous transcription.
-- **AI-assisted vacancy discovery:** configured a working ChatGPT-based process to find and evaluate relevant vacancies on CVbankas.lt using explicit criteria, exclusions, suitability scores, and explanations. This demonstrates AI-assisted workflow automation, not a proprietary search engine.
-- **Production migration:** migrated an Asterisk system from VMware to Hyper-V, including application, database, and configuration restoration, with approximately 20 minutes of planned downtime.
-- **Infrastructure:** Debian Linux, Apache, MariaDB/MySQL, Cisco/MikroTik, VPN, network troubleshooting, virtualization, and web application administration.
+- **Asterisk AMD + Whisper:** answering machine detection, recording human responses, and queuing audio for asynchronous transcription.
+- **Infrastructure:** Debian Linux, Apache, MariaDB/MySQL, Cisco/MikroTik, VPN, firewall and network troubleshooting, virtualization, and web application administration.
+- **Microsoft 365:** administration exposure and ongoing practical learning, including Teams; not presented as a primary specialization.
 
-## How I work
+## Working method
 
-I start with the business requirement and the existing system. I build or adapt an integration, test failure paths and edge cases, review evidence from logs and traces, and choose reliable production behavior over unnecessary complexity. The Clinic Autodialing language decision is one example: automatic language handling was simplified after testing and customer discussion.
+I start with requirements and the existing architecture. I isolate the relevant subsystem, reproduce the issue, compare expected and observed behavior, examine logs and traces, and test changes before recommending a production rollout. I document important limitations and work with the customer to make practical reliability decisions.
 
 ## Links
 
 - [GitHub profile](https://github.com/sergejtovstucha)
-- [Multitenant Asterisk PBX documentation](https://github.com/sergejtovstucha/asterisk-pbx)
-
-*Status note: Some systems were operational historically but are not represented here as currently deployed or compatible with the latest third-party API versions. Project write-ups describe what was implemented, rather than claiming a public runnable demo.*
+- [Asterisk Multitenant PBX](https://github.com/sergejtovstucha/asterisk-pbx)
+- [Upwork profile](https://www.upwork.com/freelancers/~0159777018e9000e93)
