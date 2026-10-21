@@ -15,6 +15,7 @@ This repository is a **technical portfolio**, not a turnkey software package. It
 | **Multitenant Asterisk PBX** | Database-driven provisioning and tenant-isolated dialplan architecture | Asterisk, MariaDB Realtime/ODBC, PHP, AMI | [Separate repository](https://github.com/sergejtovstucha/asterisk-pbx) |
 | **AI Job Search Agent** | Searches and evaluates vacancies against a professional profile, filters unsuitable positions, and identifies skill gaps | ChatGPT, AI-assisted research, workflow automation | [Project details](docs/ai-job-search-agent.md) |
 | **Asterisk + WhatsApp** | Integrates Asterisk telephony with WhatsApp messaging via Twilio API | Asterisk, Twilio API, WhatsApp | [Project details](docs/asterisk-whatsapp-twilio.md) |
+| **VMware to Hyper-V Migration** | Migrated a production Asterisk PBX, database and web application with approximately 20 minutes of downtime | VMware, Hyper-V, Linux, Asterisk, MariaDB, Apache | [Project details](docs/vmware-to-hyperv-migration.md) |
 
 ## Other implemented integrations and engineering experience
 
